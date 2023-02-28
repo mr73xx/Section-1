@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product list</title>
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css" rel="stylesheet" />
+    <style>
+        .card-bg {
+            height: 200px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .card-bg2 {
+            height: 200px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-6 my-auto">
+                    <p class="display-1 fw-bold"> SmartWatch Offers</p>
+                    <p class="h3 m-0">Never Like Before</p>
+                </div>
+                <div class="col-6">
+                    <img src="undraw_Gifts_0ceh.png">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-3 mt-4">
+                <div class="card mycard">
+                    <!-- <img class="card=img-top"
+                        src="https://images.samsung.com/is/image/samsung/p6pim/in/2108/gallery/in-galaxy-watch4-classic-399241-sm-r895fzkainu-481181864?$1300_1038_PNG$"
+                        alt=""> -->
+                        <div class="card-bg" style="background-image: url(https://images.samsung.com/is/image/samsung/p6pim/in/2108/gallery/in-galaxy-watch4-classic-399241-sm-r895fzkainu-481181864?$1300_1038_PNG$);"></div>
+                    <div class="card-body">
+                        <p class="text-muted">Smart Watch</p>
+                        <h3>Galaxy Watch4</h3>
+                        <h2>Rs. 39,999</h2>
+                        <button class="btn btn-primary w-100"><i class="fas fa-shopping-cart"></i> Buy Now</button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mt-4">
+                <div class="card mycard">
+                    <!-- <img class="card=img-top"
+                        src="https://images.samsung.com/is/image/samsung/p6pim/in/2108/gallery/in-galaxy-watch4-classic-399241-sm-r895fzkainu-481181864?$1300_1038_PNG$"
+                        alt=""> -->
+                        <div class="card-bg2" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaXDqzvgmMQOvzuf3CS1LuvAscazvJ3A-ESA&usqp=CAU);"></div>
+                    <div class="card-body">
+                        <p class="text-muted">Smart Watch</p>
+                        <h3>Galaxy Watch4</h3>
+                        <h2>Rs. 39,999</h2>
+                        <button class="btn btn-primary float-end"><i class="fas fa-shopping-cart"></i> Buy Now</button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mt-4">
+                <div class="card mycard">
+                    <img class="card=img-top"
+                        src="https://images.samsung.com/is/image/samsung/p6pim/in/2108/gallery/in-galaxy-watch4-classic-399241-sm-r895fzkainu-481181864?$1300_1038_PNG$"
+                        alt="">
+                    <div class="card-body">
+                        <p class="text-muted">Smart Watch</p>
+                        <h3>Galaxy Watch4</h3>
+                        <h2>Rs. 39,999</h2>
+                        <div class="text-center">
+                            <button class="btn btn-primary"><i class="fas fa-shopping-cart"></i> Buy Now</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mt-4">
+                <div class="card mycard">
+                    <img class="card=img-top"
+                        src="https://images.samsung.com/is/image/samsung/p6pim/in/2108/gallery/in-galaxy-watch4-classic-399241-sm-r895fzkainu-481181864?$1300_1038_PNG$"
+                        alt="">
+                    <div class="card-body">
+                        <p class="text-muted">Smart Watch</p>
+                        <h3>Galaxy Watch4</h3>
+                        <h2>Rs. 39,999</h2>
+                        <button class="btn btn-primary"><i class="fas fa-shopping-cart"></i> Buy Now</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"
+        integrity="sha512-RX/OFugt/bkgwRQg4B22KYE79dQhwaPp2IZaA/YyU3GMo/qY7GrXkiG6Dvvwnds6/DefCfwPTgCXnaC6nAgVYw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".mycard"), {
+            max: 10,
+            speed: 5000
+        });
+    </script>
+</body>
+
+</html>

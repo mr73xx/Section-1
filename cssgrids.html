@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using CSS Grids</title>
+    <style>
+        .box{
+            background-color: #ff8181;
+            border: 3px solid crimson;
+            /* width: 100%; */
+            margin: 10px;
+        }
+
+        .parent1{
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .box2{
+            background-color: lightgreen;
+            border: 3px solid darkgreen;
+
+        }
+
+        .parent2{
+            display: grid;
+            /* grid-template-columns: 400px 200px 600px; */
+            /* grid-template-columns: 2fr 1fr 3fr; */
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="parent1">
+        <div class="box">
+            <h2>Column 1</h2>
+        </div>
+        <div class="box">
+            <h2>Column 2</h2>
+        </div>
+        <div class="box">
+            <h2>Column 3</h2>
+        </div>
+    </div>
+
+    <div class="parent2">
+        <div class="box2">
+            <h2>Column 1</h2>
+        </div>
+        <div class="box2">
+            <h2>Column 2</h2>
+        </div>
+        <div class="box2">
+            <h2>Column 3</h2>
+        </div>
+</body>
+</html>
